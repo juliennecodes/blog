@@ -2,7 +2,7 @@
 title: Start With Something Simple
 date: "2021-07-03"
 ---
-Starting with something simple was the big lesson I learned in Pomodoro. I learned this the hard way when I made the mistake of writing complex code in the beginning.
+Starting with something simple was the big lesson I learned in [Pomodoro](https://juliennecodes.github.io/pomodoro/). I learned this the hard way when I made the mistake of writing complex code in the beginning.
 
 The mistake was an understandable one. At this point in time, I found success in writing apps by starting with writing usage notes. Usage notes documented how I wanted the finished apps to be used. I wrote notes on what the user does and what the direct result of that action would be. It was part of my planning process that clarified what features I want built. However, when it came time to write the code, I froze. I didn’t know how to start.
 

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[julienneblogs]]></title><description><![CDATA[Blog documenting thoughts on my projects]]></description><link>https://juliennecodes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 09 Jul 2021 15:15:33 GMT</lastBuildDate><item><title><![CDATA[React Frontend & Rails Backend Project Set Up]]></title><description><![CDATA[This is a guide for setting up a React frontend and Rails backend app. Set up React frontend Create React app In the terminal, go to your…]]></description><link>https://juliennecodes.github.io/blog/05z React &amp; Rails Set Up/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/05z React &amp; Rails Set Up/</guid><pubDate>Mon, 05 Jul 2021 23:59:59 GMT</pubDate><content:encoded>&lt;p&gt;This is a guide for setting up a React frontend and Rails backend app.&lt;/p&gt;
+&lt;h2&gt;Set up React frontend&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create React app&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project directory&lt;/li&gt;
+&lt;li&gt;Type command - npx create-react-app client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up proxy for local development&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After the React app is created, open package.json&lt;/li&gt;
+&lt;li&gt;Add proxy property and give it the value of - &lt;a href=&quot;http://localhost:8000&quot;&gt;http://localhost:8000&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 576px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/97849d01feeaffc2a6347dbdd785e80e/533c1/client-package-json.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.911392405063296%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABdElEQVQoz42Ry27aUBCG5xxzsc3NMb5x7GMbkhQrBCS6iAKtmmwqVQQlm+6yqNT3f4evwvgBuvg0/z/S/CPNiAoqZJQxjdbE2Y4w2TCef8EJLMrkOLcluihQWd56bQv0yqJi0/Z1VaDLAgkWbY6omUVNc9ygIk63zKI1g1mJnuRImKKXOSo3qDhDLRaowrQ9mWcoY9BljsouYckV52bF2OxRsxrxM2RikWmBXBaNS8S1iG+RkUW8Trud9zvGlxmLTEpkWL2T3H9SNH9YPvwluv+kt3ynvz/Re/7F4HBisDszfDrjHs643894L2+4F/98xn874f18w7v9Td9+IL1oy9wciYsfmPKVxL4Qmm+E9RGzeWXWPDG8+0q/3qLLNU7Z4FTNtdoGZ9mg8wbn5hEVPiAyNXjt/R6J0g1RsiHNtoRRQ5Ls8IIVzrRAXQ4+jBA37oiuDDvtd6igRkZp++XKHkgXe+ryyDzdosOaQXSH+DEyzv6Lf3X/sXjh3n7iAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;client package.json&quot;
+        title=&quot;client package.json&quot;
+        src=&quot;/blog/static/97849d01feeaffc2a6347dbdd785e80e/533c1/client-package-json.png&quot;
+        srcset=&quot;/blog/static/97849d01feeaffc2a6347dbdd785e80e/c26ae/client-package-json.png 158w,
+/blog/static/97849d01feeaffc2a6347dbdd785e80e/6bdcf/client-package-json.png 315w,
+/blog/static/97849d01feeaffc2a6347dbdd785e80e/533c1/client-package-json.png 576w&quot;
+        sizes=&quot;(max-width: 576px) 100vw, 576px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;That’s it for the frontend!&lt;/p&gt;
+&lt;h2&gt;Set up Rails backend&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Set up REST API Rails backend&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project directory&lt;/li&gt;
+&lt;li&gt;Type command - rails new server —api -T&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up puma.rb&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open project in your code editor&lt;/li&gt;
+&lt;li&gt;Open puma.rb
+&lt;ul&gt;
+&lt;li&gt;server &gt; config &gt; puma.rb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Change the port that the server is listening to for requests from 3000 to 8000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 512px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/578003280456e9e3883bef05c89f39db/01e7c/server-pumarb.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.36708860759494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABqElEQVQoz31SyVKDQBSckLAGGCAhJC5BApLF3YMeXS/GqsQlWvHkwf//hrbeGzCWBw9db5meZh6vhWgnEO2egtPb5Izk/9yJf92tcuH20Qr2ftCUQzRlimaQouHvoBVk0PxdNLxt1ZcpGt4W9/Qw50icVjiC5u+Q4ABGp4TVncJJTmDHMxhRASc54gtmd8LnmhzCTg65JnEScAdnMMKc+e7gnCML0suE4UNYAYQpN7EG1x0IPYQwQwg7grAo9yEMr4pS9US7D1ksIMsVrOEDsvEa/fwFXvGMcPIGv3iGWy5gnF/DvLiBeXKHdvaI5HiJcrrG1dkXxuUaxeUK/clcCcazFYLxO+x0juH+O7rZEl7xhO7BB4LyFe5oAX1yA/P0FkZxDyeds2A2fsPl8SeyfIX84rUWTKrRaOQ6BioyZNX/NTKd04g0ru5W/Ar1UuhnW/EMZqfkn0tLou1RX48KaHIXZqwWZET7vDyndwg7nkLztpljxVMlSAVtjci0WbIGXSILKTtlbBU6Ix7V9FHFH4E0iKtHuRKkV7Exa/w1bW3mv0b+4W+M/g1JyvcTzlhe3wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;server puma.rb&quot;
+        title=&quot;server puma.rb&quot;
+        src=&quot;/blog/static/578003280456e9e3883bef05c89f39db/01e7c/server-pumarb.png&quot;
+        srcset=&quot;/blog/static/578003280456e9e3883bef05c89f39db/c26ae/server-pumarb.png 158w,
+/blog/static/578003280456e9e3883bef05c89f39db/6bdcf/server-pumarb.png 315w,
+/blog/static/578003280456e9e3883bef05c89f39db/01e7c/server-pumarb.png 512w&quot;
+        sizes=&quot;(max-width: 512px) 100vw, 512px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Set up Gemfile&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open project in your code editor&lt;/li&gt;
+&lt;li&gt;Open Gemfile
+&lt;ul&gt;
+&lt;li&gt;server &gt; Gemfile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add gem ‘rack cors’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 292px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/852ec4442256fa7e426974ca601ff865/2e9f9/server-gemfile.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.46835443037975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABh0lEQVQoz62SS2/aQBSFx49gO36bGocAdgSYQigkUDVNA0FqFHWFTSNlU7VS+xO6aLf961/lAQrdddHF0b3z6czR1cwVwk4QzhmySjWO+gRxGnPwNA6eiu91fG8fpnptVK+D6qUobgvhNGXISdiTXHr8VDLNzySv1QfUolx6K1ZlbAOtOmF6x2ljhH02IcqWUifhBe75NXH3PUHnLVG2kMyKh7JP8g9E2QphN3dsuZ+wgfB6CDeXUsMxejxF8UcoziW6f4UeTNGCV6j+Jao7RvOnKO4YK5ngtycIf4hen1SBTYQZEg4K0nc/uVj8IBh+Re8VmPOPmIsS46bAelhjXG0wrjeSWXcF2rygs3rmzeMXRPOJWvq0CzQCWrNPDB5+kd5+Jxx/Q2+VGKMN1mqNdb/GXBaYsxJjVm7ZTYk2X9O+feb1/WfE+QZjG7j7YTdFuF2EkyG8LkqQo3g5ws5RnENVqmdxdszpU4sG2MlLhN9HCfqIv1ciPqr/qGptrBeH858Jq/of9BvneuNcyt691wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;server gemfile&quot;
+        title=&quot;server gemfile&quot;
+        src=&quot;/blog/static/852ec4442256fa7e426974ca601ff865/2e9f9/server-gemfile.png&quot;
+        srcset=&quot;/blog/static/852ec4442256fa7e426974ca601ff865/c26ae/server-gemfile.png 158w,
+/blog/static/852ec4442256fa7e426974ca601ff865/2e9f9/server-gemfile.png 292w&quot;
+        sizes=&quot;(max-width: 292px) 100vw, 292px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to project folder/server directory&lt;/li&gt;
+&lt;li&gt;Type command - bundle install&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up cors.rb&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open project in your code editor&lt;/li&gt;
+&lt;li&gt;Open cors.rb
+&lt;ul&gt;
+&lt;li&gt;server &gt; config &gt; initializers &gt; cors.rb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add Rack::Cors code block&lt;/li&gt;
+&lt;li&gt;Change origins to ‘localhost:3000’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/8313892d64be54c29c2846d16121b824/218a4/server-corsrb.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.177215189873415%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABTklEQVQoz32RXXObMBBFhQCBIeZTkoNtbBkTgp2HdiZO3M60fen//02nA+kkbh76cGbuXe3VaFciKvYkpSPSR2LzQKx7VNUR6Z6o7klWIws7oOoDkelRdUdsB5LKzbmk6lC6QxYtIrWIsDySba/kh5/EzVdCeyJcjYSrM6o5o+wToX4iqEdCfX5HVeMb9YmgPiHLAS8/IrxyIFz/InW/UesfyPYZv7/guxeC8YJcvyD1K9Jckeb1hus/+BP2G0IsG7xlQzqNpnv8ao1M7xELg4g0IjGIRN/w2X+qedkGcdfg2guj+05hB7abL0TFjrjYEWRbVL4jzLYkhSPINqTlgTBvUXk779HPNvPZ1Ddf6JWOQj9gzUhc7KnM4xzS5nEO5HXPsuowZmRROlb2xF3VzfVJTxljR9KqQ8hijyzd32ebt5+atf2P1x9+0jc9fwD576uLOnOYyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;server cors.rb&quot;
+        title=&quot;server cors.rb&quot;
+        src=&quot;/blog/static/8313892d64be54c29c2846d16121b824/f058b/server-corsrb.png&quot;
+        srcset=&quot;/blog/static/8313892d64be54c29c2846d16121b824/c26ae/server-corsrb.png 158w,
+/blog/static/8313892d64be54c29c2846d16121b824/6bdcf/server-corsrb.png 315w,
+/blog/static/8313892d64be54c29c2846d16121b824/f058b/server-corsrb.png 630w,
+/blog/static/8313892d64be54c29c2846d16121b824/40601/server-corsrb.png 945w,
+/blog/static/8313892d64be54c29c2846d16121b824/218a4/server-corsrb.png 1052w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Starting React App&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project/client directory&lt;/li&gt;
+&lt;li&gt;Type command - npm start&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Starting Rails Server&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project/server directory&lt;/li&gt;
+&lt;li&gt;Type command - rails server s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;React app will run on port 3000 and requests will be proxied to port 8000.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rails server will run on port 8000 and accept requests coming from port 3000.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CRUD App as Barebones App]]></title><description><![CDATA[The first week of developing Annotate was great. I budgeted the first week for planning and writing the barebones app. After the first week…]]></description><link>https://juliennecodes.github.io/blog/05c CRUD App/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/05c CRUD App/</guid><pubDate>Mon, 05 Jul 2021 23:59:58 GMT</pubDate><content:encoded>&lt;p&gt;The first week of developing Annotate was great. I budgeted the first week for planning and writing the barebones app. After the first week was over, I was surprised at how much got done. I didn’t have high expectations of a barebones app but after implementing the CRUD operations, I found that the app had a lot of functionality.&lt;/p&gt;
+&lt;p&gt;By the end of the first week, I was able to create, read, and delete both images and annotations.
+I learned about CRUD operations in the bootcamp I was recently enrolled in.* I hadn’t thought about CRUD applications as the something simple that I can build apps around but I certainly will in the future.&lt;/p&gt;
+&lt;sub&gt; 
+*Technically not true. My mentor told me about CRUD operations when I was just starting my programming journey. I didn’t have enough context to really understand the concept then but I can see why she told me about it now.
+&lt;/sub&gt;</content:encoded></item><item><title><![CDATA[Decisions Decisions. Polish or Feature-rich?]]></title><description><![CDATA[Annotate had a three week deadline and I had a schedule for what features I wanted implemented each week. For the first week, I outlined my…]]></description><link>https://juliennecodes.github.io/blog/05a Polish or Feature-rich/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/05a Polish or Feature-rich/</guid><pubDate>Mon, 05 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Annotate had a three week deadline and I had a schedule for what features I wanted implemented each week. For the first week, I outlined my three-week plan and set up a CRUD application that served as the foundation of the app. I implemented the key part of my app, Direct-to-Image Annotation, just before the second week ended.&lt;/p&gt;
+&lt;p&gt;By my original schedule, I was supposed to add a Users feature. This addition involved updating my database to include a Users table. I would also need to introduce new associations such as a User having many Images and Annotations. Image would belong to a User. Annotation would belong to a User in addition to its current association of belonging to an Image. However, when I assessed where my app was at the time, I found it hard to use.&lt;/p&gt;
+&lt;p&gt;The app was working, it just wasn’t pleasant to use. The positions of the buttons were all over the place and the grouping of controls could improve a lot. With so many things to improve on, I was at a crossroads for what I want to do for the final week. It was either spend the final week polishing the app or adding a new feature. I had limited time so I couldn’t do both.&lt;/p&gt;
+&lt;p&gt;I asked my Project Manager (Bootcamp Instructor acting as one) what he was looking for in the final project. Did he prefer a polished app with less features or a feature-rich app that isn’t as pleasant to use? I presented my choices and he left it up to me as he was alright with either direction.&lt;/p&gt;
+&lt;p&gt;In the end, I chose to polish the app. After finishing the project, I think this was the right decision. I chose to have a polished product over a feature-rich product because at the end of the day, I thought it was more important that the product does its job well.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React Frontend & Express Backend Project Set Up]]></title><description><![CDATA[This is a guide for setting up a React frontend and Express backend app. Set up React frontend Create React app In the terminal, go to your…]]></description><link>https://juliennecodes.github.io/blog/04z React &amp; Express Set Up/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/04z React &amp; Express Set Up/</guid><pubDate>Sun, 04 Jul 2021 23:59:59 GMT</pubDate><content:encoded>&lt;p&gt;This is a guide for setting up a React frontend and Express backend app.&lt;/p&gt;
+&lt;h2&gt;Set up React frontend&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create React app&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project directory&lt;/li&gt;
+&lt;li&gt;Type command - npx create-react-app client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up proxy for local development&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After the React app is created, open package.json&lt;/li&gt;
+&lt;li&gt;Add proxy property and give it the value of - &lt;a href=&quot;http://localhost:8000&quot;&gt;http://localhost:8000&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/24417d9514e70f94e7d081b1d9ca913a/1bba8/client-package-json.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.87341772151899%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABiUlEQVQoz42SS2/TUBBG5167buI4jt+PXF/LCWlLaJNUkDYVjQqiomxggfj/v+Ugx4guYXE0mlmckeYbkUmJmlkkbPDjBXm1JczeokKDMgZn1aJqg5obtG3QXYOqDHrRoOsGFRh6hwTVUGVSoKIWmTYEyQVNcyCvdoySFapucK67k1S3Fr1scd51aGtxLlqcZYuet4MsqAdkXKHCGh01uGHNeWjw+r7f5qdInCFJjkxTZJYhaY6EGRJlSJwjQYqMYsRPBsZlgkRrZt03ovaZSfXIqHpEzffo5R5t9zj1HY69x23vcbvX6lztGV8eiLsjKjvgFA/IZB4j8Q1x953mzU/s6hdJ9wO/e2H24SvTu2dGmy+cb5/wbo9474942yPe7sjZw0eCm88UqxdU8YRbfULEL5FwjhdZinJDVlxTlhvqanciKta4sUUFxXACP3tl3JMOTP7MTqHM+lAM43hBYW7JzY6s3nKWLnDSDgnK1yT/xd+36aV9SmWNvrIoa9CXFnfd4cT2v4W/Aa7JxgeGpn9eAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;client package.json&quot;
+        title=&quot;client package.json&quot;
+        src=&quot;/blog/static/24417d9514e70f94e7d081b1d9ca913a/f058b/client-package-json.png&quot;
+        srcset=&quot;/blog/static/24417d9514e70f94e7d081b1d9ca913a/c26ae/client-package-json.png 158w,
+/blog/static/24417d9514e70f94e7d081b1d9ca913a/6bdcf/client-package-json.png 315w,
+/blog/static/24417d9514e70f94e7d081b1d9ca913a/f058b/client-package-json.png 630w,
+/blog/static/24417d9514e70f94e7d081b1d9ca913a/1bba8/client-package-json.png 642w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;That’s it for the frontend!&lt;/p&gt;
+&lt;h2&gt;Set up Express backend&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a server folder in your project folder&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create package.json&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project folder/server directory&lt;/li&gt;
+&lt;li&gt;Type command - npm init&lt;/li&gt;
+&lt;li&gt;Press enter for every choice except for entry point, type - server.js - instead&lt;/li&gt;
+&lt;li&gt;Optional
+&lt;ul&gt;
+&lt;li&gt;Edit package.json&lt;/li&gt;
+&lt;li&gt;For the scripts object, add “start”: “node server.js”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This is what package.json in the express server looks like&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 520px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/ac1fda12020f3f38ab1c80b4efa45f56/69902/server-package-json.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 105.69620253164558%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC6ElEQVQ4y4WV247bNhRFKVm+y7JkXamrxx6PM7I9ScaOgaBBgX5AjPahT0X70P//hxWQUjIaw5M8bJxDidzkIfcmhZhGmE7OIFgjxgGq3SBuMLmCnSBs9S9p8yuoQYaT01/cMZiXDN2KkbvEcnKEKxEL+RI92U7Ukr5FKGaZ7hgl77krf0Omz1huhRFmWPuK3qakty0x45yeVzYVqMHT+C3CHGFLvLAmlh90zLITXrTDmBeIPMGoMnoPJdZ2qbfoJtmrFdqSMHlCpkfc8FHnQXzADR5xo5p+sMQoM8y4wLTzX5SsZrQTTZDnn/CimkW0J5AH4vwDblzTW5SIWYwVVAinU+71Sn8QThOS5COpPOEs3jFwV4gwQdQZYp1hbguMKNWxn90hpvL2Kn9IwEmYZEvk3RPJes/QLxHjCDFLmkNQcdb0M+xUb9HbJdsJpiOZy3uc+J6wqJlHGy0ja57jpA+IadjRaDe/QlNygXBKguRInJ6J5Jk0+0woT4zljuLpC8JWe9hBtz0v9Xida9b5isHyL6ziQrT5h6r+n3T7H/HDv0xWfzN8ujD+/Suj81eGhwujzy/5cH9hdLzQL/7UaEvOsYszwfYPDPeRvn/A8g8Yix2mt8fwakxZY0Y1Zlhjxi2CNvo7DG+Hudh9PxTJOKyQmyM9W9KbSayZxFT/nBAxCxCjoPH6pI3dXMVpG190KEnlM1n2CZme8OMDo8U9RpzRz1YY07Q5ZfsX6DpFOUTZTglcOUVbT01WpJiPJUaaNZLpivmmsFtCRaSsp/ysVqratv+AnWyY5ht6fsUw2CAmYaPdW27pOsWP96yqL6TpkVyX/qyRpSdG/hrLXzIIVgg7auw3+9kKlRbHgS67yM+65ER+JEjeI+YZIo4xVznmWqHArPLXnn5NmOprahDc6w7qku05OZZTYM7SpqO6rVvradg/LTnD8pZYXnX1BHSegu8Du7h9KBHmvGAYbhpNvSWHWxfqjW/fAEWj+37UMJF9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;server package.json&quot;
+        title=&quot;server package.json&quot;
+        src=&quot;/blog/static/ac1fda12020f3f38ab1c80b4efa45f56/69902/server-package-json.png&quot;
+        srcset=&quot;/blog/static/ac1fda12020f3f38ab1c80b4efa45f56/c26ae/server-package-json.png 158w,
+/blog/static/ac1fda12020f3f38ab1c80b4efa45f56/6bdcf/server-package-json.png 315w,
+/blog/static/ac1fda12020f3f38ab1c80b4efa45f56/69902/server-package-json.png 520w&quot;
+        sizes=&quot;(max-width: 520px) 100vw, 520px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Install Express as a dependency&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project folder/server directory&lt;/li&gt;
+&lt;li&gt;Type command - npm install express —save&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create server.js&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open your project in your code editor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new file server.js in project &gt; server folder&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Write this code in the server file
+&lt;code class=&quot;language-text&quot;&gt;const express = require(&quot;express&quot;);
+  const app = express();
+  const port = 8000;
+  app.get(&quot;/hello&quot;, (req, res) =&gt; {
+    res.json({body: &quot;hello&quot;})
+  });
+  app.listen(port, () =&gt; console.log(&quot;Listening on port 8000&quot;));&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Important note - Express port is 8000. This makes it so both the client and the server can run at the same time without conflict. React runs on port 3000 and Express run on port 8000.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/d50a2eef10ee17ae61362fd4325c176b/52ab5/server-file.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.139240506329116%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABYklEQVQoz52R227aQBBA1xcw9uLLGnxbr0kUu5g4F1AoTVL1pe0HtG/9gf7/L5wIzEOVNlLUhyPNzmhGM2dFHPbky1uSeED6a5yZQUQVyXJDWt+zMBu67o5EdwhVItIKK6wQskDMy78Jw2tMfWDmtUzdK+yZwYo1/qIlyDvc7II47xBzgwhXOKE5N78xUCUDbfuFOBrwvQ84foMVVbjLnlivkabFKVqscoWTd9hhjZAlIihekY9bq6Rj3T5ydXGgzHa4QYMV17jqEi+t8dQKOzI4YYUTN0yVwVUakZajAlVgqxonaUYVWb7lYfuNy2ZP4HW4wQo3NUyyHdI8EdTPTIpHpvknptXz6e3pA7be45x4YKKPtSfc/CMiigaybIdSd8igx/Lqsx+NkMfzNGJen/kjlmb0euKcO/rNsw3b++/cDF+pyj22b8aB8j8p+x/cfv5N0f/C1z+ZLHYIufz3D76DF9aVw2UOG4SXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;server.js&quot;
+        title=&quot;server.js&quot;
+        src=&quot;/blog/static/d50a2eef10ee17ae61362fd4325c176b/f058b/server-file.png&quot;
+        srcset=&quot;/blog/static/d50a2eef10ee17ae61362fd4325c176b/c26ae/server-file.png 158w,
+/blog/static/d50a2eef10ee17ae61362fd4325c176b/6bdcf/server-file.png 315w,
+/blog/static/d50a2eef10ee17ae61362fd4325c176b/f058b/server-file.png 630w,
+/blog/static/d50a2eef10ee17ae61362fd4325c176b/40601/server-file.png 945w,
+/blog/static/d50a2eef10ee17ae61362fd4325c176b/78612/server-file.png 1260w,
+/blog/static/d50a2eef10ee17ae61362fd4325c176b/52ab5/server-file.png 1420w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Starting React App&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project/client directory&lt;/li&gt;
+&lt;li&gt;Type command - npm start&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Starting Express Server&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the terminal, go to your project/server directory&lt;/li&gt;
+&lt;li&gt;Type command - node server.js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Testing React and Express Connection&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start your React app&lt;/li&gt;
+&lt;li&gt;Type this code in the console&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;fetch(&quot;/hello&quot;).then(res =&gt; res.json()).then(serverResponse =&gt; console.log(serverResponse.body));&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;P.S Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In development, the endpoint “/” doesn’t work in Express server. When a GET request is made to that endpoint, the React app supersedes the proxy and the GET request gets the index.html of the React app instead.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you make changes to the server code, you have to close the current server and run it again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Write Stupid Endpoints]]></title><description><![CDATA[Writing stupid endpoints was a lesson I learned in making Seaside Cafe. My mentor told me to keep the endpoints idiot proof. All the…]]></description><link>https://juliennecodes.github.io/blog/04y Write Stupid Endpoints/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/04y Write Stupid Endpoints/</guid><pubDate>Sun, 04 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Writing stupid endpoints was a lesson I learned in making Seaside Cafe. My mentor told me to keep the endpoints idiot proof. All the endpoint has to be concerned with was receiving the request and sending a response back. The logic of how it handles the request should be delegated elsewhere.&lt;/p&gt;
+&lt;p&gt;In Seaside Cafe, I had the endpoint for POST requests to “/cart” receive information from the client and use that information to update the cart. The logic of updating the cart was handled elsewhere. All the endpoint has to worry about is sending the updated cart information to the client.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/71a17388af013a35a8b645c340816d40/ae694/write-stupid-endpoints-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.405063291139236%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABZElEQVQoz3WRW1OjQBSEBzUa7pGEAYZLCASCkUiMurVW3vb//6dvC0wMlvrQc05NzfTp7iOEFTCZl0wXGZZM0WYRwvMRrkRzM7RZjrBTNDdn4sQIUyIMH2GFCDP4QN+f0V9M5ZYo3xNlG6ZJg1nt0OOaa6/iJv6Lrg5Mow4nbHHSAxOv+E50HtAfmh0jgw573uBmbwT1P24XG4TfYaTv3Od/sJNnvPJ4IlwhDHlSKE8ILgqv3QwZdjj+Bnf5ih4+4oYZSb0n3+xY1i0PTweSqkMPmuGNpZ648yvsZI8ddxjh40XhlZMiwx32osFOX5gt3/DX75hBzcTLsVSLWtU8tFvyektUbAdSU+0Gwnl5xIzakWU3w4gP6H6Bt9zjFcfBZrh+ZaYqNCf5uoSxzc8aXAhv5muu/JZ7VeDFJXeyQfdXqLxErRpuFxWaHf28iPFCzhn2IQ8f+qCN0XRdfmAc+m/11P8HO3jFfZReSscAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/71a17388af013a35a8b645c340816d40/f058b/write-stupid-endpoints-1.png&quot;
+        srcset=&quot;/blog/static/71a17388af013a35a8b645c340816d40/c26ae/write-stupid-endpoints-1.png 158w,
+/blog/static/71a17388af013a35a8b645c340816d40/6bdcf/write-stupid-endpoints-1.png 315w,
+/blog/static/71a17388af013a35a8b645c340816d40/f058b/write-stupid-endpoints-1.png 630w,
+/blog/static/71a17388af013a35a8b645c340816d40/ae694/write-stupid-endpoints-1.png 850w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Server endpoint for POST request to “/cart”&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/ab5a9ca179622692a04f138a9f813d95/33d1d/write-stupid-endpoints-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.835443037974684%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABgklEQVQoz4WS2W7iQBBFy8aJ8b60d+OFGDNAIhSCkpf8/3edkY0zIQ/RPByV1FJ136VF3BI/74jrHjvtkGBAwic0dUQPGsTJEDtDrDvsBSdF7AWnQNwCEbfCVB1q84xqXyl2F4rhFbv7xKqvrIINRtjgpg1e1s7YyYaHuEeCHi3aoUdPiJsjTo6IVyFejalGzPSA15xpj1fU9p2g+8Cpz0T9lbw/EZUdcbXFz1vMZECiHZo6oMfj3YVuebM2HcxWUh7CEm2SP9sob9PKETNBzBRZp4iVIJa6MVvOF8uTQn+DGQ84xQnVHMjaEbt8wcjP6PGAUb3jFyNpfWCtGvSwRfwWbcp6FlN882XZUjvWyR6nfqHaXwi7N7zmDat4JuouFP2RqOxnuys1ztlpyYlVPHyru5VSogUtq3SPkf7hMRnwip7HuMeIthhRhxH1aH6zNJzfmneWlqc5x/Mvwwo9aNH8emZaFqdErK8vkS0ZZT+t3fNDoVct/215YV7M/7/4C38BwqPXAzU/9x0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Method with Logic&quot;
+        title=&quot;Method with Logic&quot;
+        src=&quot;/blog/static/ab5a9ca179622692a04f138a9f813d95/f058b/write-stupid-endpoints-2.png&quot;
+        srcset=&quot;/blog/static/ab5a9ca179622692a04f138a9f813d95/c26ae/write-stupid-endpoints-2.png 158w,
+/blog/static/ab5a9ca179622692a04f138a9f813d95/6bdcf/write-stupid-endpoints-2.png 315w,
+/blog/static/ab5a9ca179622692a04f138a9f813d95/f058b/write-stupid-endpoints-2.png 630w,
+/blog/static/ab5a9ca179622692a04f138a9f813d95/40601/write-stupid-endpoints-2.png 945w,
+/blog/static/ab5a9ca179622692a04f138a9f813d95/33d1d/write-stupid-endpoints-2.png 1150w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Method with logic of updating the cart&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Developing From a Usercentric Perspective]]></title><description><![CDATA[One of the factors in me making Pomodoro was because I use pomodoro timers. Me being a user shaped the app I built as a lot of the decisions…]]></description><link>https://juliennecodes.github.io/blog/03b Usercentric Development/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/03b Usercentric Development/</guid><pubDate>Sat, 03 Jul 2021 23:59:58 GMT</pubDate><content:encoded>&lt;p&gt;One of the factors in me making Pomodoro was because I use pomodoro timers. Me being a user shaped the app I built as a lot of the decisions I made regarding Pomodoro was centred around what I, as a user, would want the app to be.&lt;/p&gt;
+&lt;p&gt;One of the features I wanted was a gentle sound to indicate that the session was over. One of my experiences from other pomodoro timers was a really loud bell sound after the session was over. Yes, it did the job of indicating that the session was over. However, it made for a really jarring experience when I was really absorbed in a task and got taken out of that state by a loud ringing sound. So when I wrote Pomodoro, I made sure to find the right sound. In terms of user experience, the previous pomodoro timer was like a violent shake to the shoulder, whereas, I opted for a kind of gentle tap to indicate that the session is over.&lt;/p&gt;
+&lt;p&gt;I also wanted to limit the need for user input. As a user, all I want to do is press the start button to start the timer. I don’t want to have to keep track of whether I am supposed to be working, taking a break, or taking a big break. So, I did just that. The app is programmed to follow a pattern of work then break sessions, and if the user has completed four work sessions, switch to a big break session. The user is not aware of the mechanisms involved, nor should they be. I wanted to write an app that is easy for the user to use and still deliver results.&lt;/p&gt;
+&lt;p&gt;I also kept the user in mind when designing the UI. The primary information such as the number of pomodoros completed, the remaining time, and the timer button are front and center. Secondary information such as the button for completing the day are off to the side corner, taking up less space. It is still there, it just doesn’t command the same attention as the main part of the timer. By placement, size, and colour, I kept the primary part of Pomodoro prominent and the secondary part less so, presenting information in a clear manner.&lt;/p&gt;
+&lt;p&gt;By constantly keeping in mind what features I, as a user, wanted, I was able to improve the app and hold it to a higher standard. I think the line of thinking of developing around the user is a good one to carry as it is a reminder that the app is a product for the user and user experience is of utmost importance.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Start With Something Simple]]></title><description><![CDATA[Starting with something simple was the big lesson I learned in Pomodoro. I learned this the hard way when I made the mistake of writing…]]></description><link>https://juliennecodes.github.io/blog/03a Start With Something Simple/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/03a Start With Something Simple/</guid><pubDate>Sat, 03 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Starting with something simple was the big lesson I learned in Pomodoro. I learned this the hard way when I made the mistake of writing complex code in the beginning.&lt;/p&gt;
+&lt;p&gt;The mistake was an understandable one. At this point in time, I found success in writing apps by starting with writing usage notes. Usage notes documented how I wanted the finished apps to be used. I wrote notes on what the user does and what the direct result of that action would be. It was part of my planning process that clarified what features I want built. However, when it came time to write the code, I froze. I didn’t know how to start.&lt;/p&gt;
+&lt;p&gt;What I didn’t take into account was that my past projects were too simple, which hid the flaws of this approach. The flaws became apparent when the same approach didn’t work for a more complex project like Pomodoro.&lt;/p&gt;
+&lt;p&gt;Part of the complication was that there were multiple moving mechanisms involved in a pomodoro timer. Starting the timer didn’t just mean the timer counting down, it means keeping track of the timer being active or not, the time remaining, the current session, and the number of pomodoros completed. This was a lot especially when I was just starting.&lt;/p&gt;
+&lt;p&gt;I told my mentors how I found it difficult to even start the project. The code I wrote was very messy and I was dissatisfied with it. Hearing my problems, it was suggested that I should start with something simple. Once I got a simple feature going, write tests to make sure it keeps working. When that feature is foolproof, work on adding a newer feature backed by tests. Repeat this gradual addition of features and tests until the app is finished.&lt;/p&gt;
+&lt;p&gt;Writing out the code in steps helped immensely. I started writing the code for just the timer counting down when the start button is clicked. After that feature was working, I wrote code to make sure it wasn’t counting down past zero. After that I introduced work session switching to break session. I slowly built the app by gradually adding features and eventually what started as simple code turned into a complex app.&lt;/p&gt;
+&lt;p&gt;Learning this lesson was great. It allowed me to hone the process of how I write apps for the better. Making this mistake once was worth it because I was able to make sure I didn’t make it again. I carried this lesson over to other projects and I credit it for smoother experience in writing apps.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Learning Journey]]></title><description><![CDATA[I started my programming journey with HTML, CSS, and JavaScript. I was reading a lot of books, watching online course videos, and…]]></description><link>https://juliennecodes.github.io/blog/01 My Learning Journey/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/01 My Learning Journey/</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I started my programming journey with HTML, CSS, and JavaScript. I was reading a lot of books, watching online course videos, and experimenting with writing websites. Looking back on it, the things I made were very simple and if I did them now, I would need just a fraction of the time I spent on it. However, at the  time, I had absolutely no programming experience and I was diving headfirst into making things while simultaneously being introduced to the concepts. I was doing simple work but it was a necessary beginning. It gave me the context I needed when I started a more structured learning of JavaScript.&lt;/p&gt;
+&lt;p&gt;At the behest of my mentors, I started reading Eloquent JavaScript. I had assigned chapters to read every week. There were also exercises at the end of each chapter to test the concepts learned. I met with my mentors every Sunday so I could ask them questions, of which there were plenty. I got my code reviewed and received  a lot of advice on how I should write moving forward, which I took. Week by week, I continually grew as a software developer. By the end, I learned the fundamentals of JavaScript and progressed to learning React, a UI JavaScript library.&lt;/p&gt;
+&lt;p&gt;React was suggested to me as the next step. For practical reasons, React was a popular JavaScript library that a lot of companies use. For personal reasons, my educational background is in the visual arts so I was naturally more inclined towards the frontend side of programming.&lt;/p&gt;
+&lt;p&gt;It was at this point that I shifted towards a more project-based learning. I started writing apps with the goal of learning something new in each one. I’ve undertaken progressively more challenging projects than the one that came before. In the process, I learned about states, React hooks, React Router, automated testing, client-server communication among many others.&lt;/p&gt;
+&lt;p&gt;In the process of writing apps, I’ve been introduced to the backend territory of programming. I started with Express, writing REST APIs. More recently, I enrolled in &lt;a href=&quot;https://allaboardbootcamp.com/&quot;&gt;All Aboard Bootcamp&lt;/a&gt;, which taught me Ruby on Rails. I had familiarity with the concept of endpoints through past projects and expanded on my backend knowledge by learning to work with databases(through Rails).&lt;/p&gt;
+&lt;p&gt;There is still so much to learn. My programming journey is ongoing as I continue to move towards the backend territory of software development. Particularly I think GraphQL, and databases.&lt;/p&gt;</content:encoded></item></channel></rss>

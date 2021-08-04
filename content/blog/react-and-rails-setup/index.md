@@ -52,7 +52,7 @@ That’s it for the frontend!
 
 - Starting Rails Server
   - In the terminal, go to your project/server directory
-  - Type command - rails server s
+  - Type command - rails s
 
 - React app will run on port 3000 and requests will be proxied to port 8000. 
 - Rails server will run on port 8000 and accept requests coming from port 3000.

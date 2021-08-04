@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer>
         Copyright &#169; {new Date().getFullYear()}{` `}
-        <a href="https://github.com/juliennecodes">Julienne San Luis</a>
+        <a href="https://juliennecodes.github.io">Julienne San Luis</a>
       </footer>
     </div>
   )

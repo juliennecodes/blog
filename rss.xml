@@ -1,4 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[julienneblogs]]></title><description><![CDATA[Blog documenting thoughts on my projects]]></description><link>https://juliennecodes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 04 Aug 2021 18:37:05 GMT</lastBuildDate><item><title><![CDATA[React Frontend & Rails Backend Project Set Up]]></title><description><![CDATA[This is a guide for setting up a React frontend and Rails backend app. Set up React frontend Create React app In the terminal, go to your…]]></description><link>https://juliennecodes.github.io/blog/react-and-rails-setup/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/react-and-rails-setup/</guid><pubDate>Mon, 05 Jul 2021 23:59:59 GMT</pubDate><content:encoded>&lt;p&gt;This is a guide for setting up a React frontend and Rails backend app.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[julienneblogs]]></title><description><![CDATA[Blog documenting thoughts on my projects]]></description><link>https://juliennecodes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Aug 2021 15:06:00 GMT</lastBuildDate><item><title><![CDATA[I Made Dynamic Pages! \(^o^)/]]></title><description><![CDATA[I just finished making my web development portfolio. It features the projects I made and blog posts I’ve written. I was originally going to…]]></description><link>https://juliennecodes.github.io/blog/dynamic-pages/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/dynamic-pages/</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I just finished making my &lt;a href=&quot;https://juliennecodes.github.io&quot;&gt;web development portfolio&lt;/a&gt;. It features the projects I made and blog posts I’ve written. I was originally going to hardcode the information just to publish it quickly but I also found that process to be a bit tedious. I weighed my options. Do I spend the time writing hardcoded information for each project or do I invest time into learning how to dynamically create pages?&lt;/p&gt;
+&lt;p&gt;The answer was both!&lt;/p&gt;
+&lt;p&gt;I did hardcode information at the start just to publish it quickly. However, I think that way was untenable. I found this to be the case when I was making continual changes to the content, which was why I turned to figuring out how to do dynamic pages.&lt;/p&gt;
+&lt;p&gt;The biggest challenge I think was dynamically creating routes. I can create components from objects but how do I create the routes to several different projects?&lt;/p&gt;
+&lt;p&gt;Here’s how.&lt;/p&gt;
+&lt;p&gt;I had a projects array that contained several projects.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/59510c6c7e262862dbc2b5eefd6cf57c/1b1d5/dynamic-pages-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 8.227848101265824%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAdElEQVQI1y2MWxKCMBAEscDKAxFYFINoCQEREr3/8cbKkr/Z7p1JRDXgRDMkWYjrAtl+oG4rDuceWT1AGx/ZhrR6cdad3+/yCXF578x4aOOQyHpE0SxQNEXh4uADGY3I7z/IduWRI1kuBqaMYx9+g8u7L7s/m8gyXvJ47EIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/59510c6c7e262862dbc2b5eefd6cf57c/f058b/dynamic-pages-1.png&quot;
+        srcset=&quot;/blog/static/59510c6c7e262862dbc2b5eefd6cf57c/c26ae/dynamic-pages-1.png 158w,
+/blog/static/59510c6c7e262862dbc2b5eefd6cf57c/6bdcf/dynamic-pages-1.png 315w,
+/blog/static/59510c6c7e262862dbc2b5eefd6cf57c/f058b/dynamic-pages-1.png 630w,
+/blog/static/59510c6c7e262862dbc2b5eefd6cf57c/1b1d5/dynamic-pages-1.png 876w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When I mapped through the projects array, I dynamically created route paths using the URL property from each project.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/52329df2a0ebf8b7073f9a611cfa5355/5d72a/dynamic-pages-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 35.44303797468354%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABG0lEQVQoz42R226CUBBFj6hYD4gowuEuN28FtW1sE/vQ//+r1QimsaZNfFiZyc5kZ/aMGDoFZrhHBjWG2pCUa4ywoee90VevaHaG5r8zUAfkLGc4yxCmjzBUV+/pTRN0b8vIb7iYPzkJPStGWEvEdIm49HaKsCJ6tyYTHyG9zti4qWIStsOL4Ijj7fHTNVn1TJStWFY7ZFigFwX96IwWfjLyXzCiDTIsSVc1VnxgEH8xTs4M5iWi3WASYno7wuiEGxxZqD2OqvHSkjivsIKqjd/3T2hugxsXLJIKGezbcxlBja4atOADIcwAzU4x3A32Yos+yxHS7SLIKz+xvJt499qVwTxnrHadibyKfx37UTQrRpvGv7/23wcf4BuqLqkGEuAXBQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/52329df2a0ebf8b7073f9a611cfa5355/f058b/dynamic-pages-2.png&quot;
+        srcset=&quot;/blog/static/52329df2a0ebf8b7073f9a611cfa5355/c26ae/dynamic-pages-2.png 158w,
+/blog/static/52329df2a0ebf8b7073f9a611cfa5355/6bdcf/dynamic-pages-2.png 315w,
+/blog/static/52329df2a0ebf8b7073f9a611cfa5355/f058b/dynamic-pages-2.png 630w,
+/blog/static/52329df2a0ebf8b7073f9a611cfa5355/5d72a/dynamic-pages-2.png 834w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This made it so that there is now a Route component watching out for browser URL matches to &lt;em&gt;/annotate&lt;/em&gt;, &lt;em&gt;/pomodoro&lt;/em&gt;, and &lt;em&gt;/seaside-cafe&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the event that the Route path matches the URL in the browser, the Route component’s children are rendered.&lt;/p&gt;
+&lt;p&gt;If the current URL in the browser is &lt;em&gt;/annotate&lt;/em&gt;, a ProjectPage component, configured to the annotate project, is rendered.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 560px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/50481c52071b04b4f86dc2efd5bde620/b06ae/dynamic-pages-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 22.78481012658228%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAABHElEQVQY05XG0U6CUACAYeRgZZEOUTx4DoKAiEKppaZpV22traD1Al11Ue//AH9bWw/Qxbd9hh7tGcglnd4cxx+TznJUnOIMQ6IsZ5LPaOuSRjfGiCTmpMD0tgh/g1AHTHeKLQtaQYnhKYyONycItrj9AldOSLMrwnFJz88Ik5xRkjKIZthyjB0pzpIFQm4Rao9Q94h+ia1XXKqEto4wGk6Eq7c4gyWj8Igc7ujJDdP4GVeu8OOccnFDXi4ZJQWdYM1J+IhQD1jhE0IdOfVviacF02KJke2+Seaf6OyD68MXF5N3zOELVlDRDGosXSNUjdA1pqqwdEXzT1DT1K+/t/Qb5rDCsNWGc29Dy1vTDe84GawwuwtM9/+Eu+AHe/6Itm7EYlAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/50481c52071b04b4f86dc2efd5bde620/b06ae/dynamic-pages-3.png&quot;
+        srcset=&quot;/blog/static/50481c52071b04b4f86dc2efd5bde620/c26ae/dynamic-pages-3.png 158w,
+/blog/static/50481c52071b04b4f86dc2efd5bde620/6bdcf/dynamic-pages-3.png 315w,
+/blog/static/50481c52071b04b4f86dc2efd5bde620/b06ae/dynamic-pages-3.png 560w&quot;
+        sizes=&quot;(max-width: 560px) 100vw, 560px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The ProjectPage component is a template for the project pages. It gets customized with specific information from each project. I passed in the project object to the ProjectPage component so that I can extract information like so.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/2adf500590932c35786f722f84b7f04d/d7e70/dynamic-pages-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 93.0379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAACuklEQVQ4y42U6W7bSBCEZ0jq5C3e5JCiRIk6bcOJjQTY93+ubzGklNUGdpwfhZ6DLHRX17SQfoO52rIIO6b+hmVcExcbgmyDDHpkeEAGO6S/HaLhKYSdI5bZDSnCThB2Oq6FW2LGB5yiZ9sfydo9UilMpZCVwihqjHqNoTrMqsVUDTKtEEGBCHJEWCP8FsOvsYI1QjgFwm+w8x3npyv99QnRNphdjdHVTDYt0/U3jPIHTv2K174yVXtkohBRjow3yLBnstoyi3djhkKXobGIEYtkTF3HhS4nQ9jFLWYMCej9Y8nL5L84EtYEZUe9u7Koeqx6y6zdM2m2yLJChDcCJ38gzj/GnTBbH7HbF2T5xqz8TrB5Y1GeRrEHot9+/IxUE0qvxgw3CLfAcFNML0e42QivGM6/JPo9QzPqmKU9cXMgUh1GnCOSDJnlSD8b9bGzr0mFW6ExSa/M65/Y6hvl9jJEq/oHK3/DLH+yyF+Yhus/k+m7e4bTRJtY+0mxiGpkuMNcdUOUqx4zbJH623tTPsKjhlbYYgZrpPtgEd0Q+/4SMqRzs82HeMhQ+jVe3LMMOry0xiu2yPiKGe2ZZwdm6RE72xOV66ESEV2YRDsW2ZF5emCy2tz8+VCylfTMsyPF9kq1e8YqG0SqG1MgywKZlv83+Oclj02xkjPT6h2nemG1ecetXwnVBSP7jpm/YyUXzPjEVL/XuyyfN0Vh6QYE66Epy7jBiA5YUY8RnTDiy3g/TJrsL4ytJ0V0I3Tz2+t4RDLGwez518bWhJNfGp5R+2fMQmtYIPNqeM9aQ5mXGPGfrKPnoVOOGkbdMIIMv0H62j6K4c4phrXUWjsKodeeGjypz6RXDXs9ePVMFKavhrbP4w6/esJXzwTqeYhh84pbnHHyE25xYpaeB9hpzzLdY2f9DYdhFs7iPf8Co3fFvM1ZM/IAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/2adf500590932c35786f722f84b7f04d/f058b/dynamic-pages-4.png&quot;
+        srcset=&quot;/blog/static/2adf500590932c35786f722f84b7f04d/c26ae/dynamic-pages-4.png 158w,
+/blog/static/2adf500590932c35786f722f84b7f04d/6bdcf/dynamic-pages-4.png 315w,
+/blog/static/2adf500590932c35786f722f84b7f04d/f058b/dynamic-pages-4.png 630w,
+/blog/static/2adf500590932c35786f722f84b7f04d/40601/dynamic-pages-4.png 945w,
+/blog/static/2adf500590932c35786f722f84b7f04d/78612/dynamic-pages-4.png 1260w,
+/blog/static/2adf500590932c35786f722f84b7f04d/d7e70/dynamic-pages-4.png 1286w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I think spending time learning how to do dynamic pages was a good decision. With hardcoding information, the time required just grows more and more with each new project. Although there is a greater initial investment in time with learning how to do dynamic pages, there is less time involved in writing pages for future projects since I just have to assemble the object that represents that project and I don’t have to bother with marking up the content.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/2e98bd0b55cde37a0ce2d222ba7d6aa2/914c7/dynamic-pages-5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 117.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAAC50lEQVQ4y5VV23LaMBCVZUMwGNvYgOSbwJiES0LSNJ32of3/3zqdXVmJy0wm9OHMriTmeC9nF+GlBsH6gEm+R6IOCMsDIvOMiTpCJg28uIKYKYhI3wYR17hbHxAuDwhUA78xCJot/MxARIX90X8RzksEiy3EooAoCnhlaf0pkTjcQOQ+6ghl2kBkhSWLC4iZtqS3YEhKaYXqhKi8YJS2EIm2pGTdB9LeOj8bnAlE9B5hVCDIdlh2fxDWR8iTQXDZInjeInjp8W2L4HvL/ujnDsFrf35rEVxayLIZRBhX8BcbeFEJMV9DrCgCDbGkSBVEpiCWBbxVCZF/2Pc7sstyQDivMMpahp8ayHmNIN1y+qNFyz7dfV3HQVPG+R4z/YRRtsM47xCqMyYkJXXCVD8y8XudPoMjpghDfcLMXBCstjbtRFkbK4jYWW0bwtC2ac7nt/4sogreooa/MfCqCkIXEFUBsdIQWrMuPVVxvehdNjVbr6wgTc2W3wp7x02ZrE+YqkfM9AXjrGOfEBXPuMvvIaZrm054gya5hss9E5HAaXapOX5i+Ez2y/r9o0OqYXnGuOj6elD9lLVJj3hQs0R/iD4diJ0Qa1tDupRdDf+84br4ewP/3sB/3DDkvrFvu4ZrKLsGPt0dDPyjgX/awH8wDCtsmuPZ2naW9DTXH4iu/Fn/7qyLPu5H1i0HJ2IvrewkuJm99nvr5YPpGGrRCrvD3eoeU32GXNS8xnj0VAFJElElPE3ofZKPrvt9ebXeRFRisj7yRMikhowryKjiceP5nqwgwivZhD1cZ4cLmAhHeYe8+80Rxs0rks0PLNpfSMwbRvnO1vizRXu9zUk2QdbibrmHnzQY5ztOn0DzPFk/2I1+698AE6YbyHkFGTf9pqYUKdUeblJuETfXsDhiZp4QmReMVAtvUbEMvKFo3RZ3EhqK2S2OD2FreG0Jb19BHhv4Txsr3rMVNtuTFTiJm0V/sEImS9vdnf8CF+w3X3ZoHvMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/2e98bd0b55cde37a0ce2d222ba7d6aa2/f058b/dynamic-pages-5.png&quot;
+        srcset=&quot;/blog/static/2e98bd0b55cde37a0ce2d222ba7d6aa2/c26ae/dynamic-pages-5.png 158w,
+/blog/static/2e98bd0b55cde37a0ce2d222ba7d6aa2/6bdcf/dynamic-pages-5.png 315w,
+/blog/static/2e98bd0b55cde37a0ce2d222ba7d6aa2/f058b/dynamic-pages-5.png 630w,
+/blog/static/2e98bd0b55cde37a0ce2d222ba7d6aa2/40601/dynamic-pages-5.png 945w,
+/blog/static/2e98bd0b55cde37a0ce2d222ba7d6aa2/914c7/dynamic-pages-5.png 978w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The downside of this is I am limited to the template version. I have to adhere to the already provided structure. I think the time saved in having a template is a good tradeoff though so all is well and good.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React Frontend & Rails Backend Project Set Up]]></title><description><![CDATA[This is a guide for setting up a React frontend and Rails backend app. Set up React frontend Create React app In the terminal, go to your…]]></description><link>https://juliennecodes.github.io/blog/react-and-rails-setup/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/react-and-rails-setup/</guid><pubDate>Mon, 05 Jul 2021 23:59:59 GMT</pubDate><content:encoded>&lt;p&gt;This is a guide for setting up a React frontend and Rails backend app.&lt;/p&gt;
 &lt;h2&gt;Set up React frontend&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;

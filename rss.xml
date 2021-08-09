@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[julienneblogs]]></title><description><![CDATA[Blog documenting thoughts on my projects]]></description><link>https://juliennecodes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Aug 2021 15:22:41 GMT</lastBuildDate><item><title><![CDATA[I Made Dynamic Pages! \(^o^)/]]></title><description><![CDATA[I just finished making my web development portfolio. It features the projects I made and blog posts I’ve written. In the process of making…]]></description><link>https://juliennecodes.github.io/blog/dynamic-pages/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/dynamic-pages/</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I just finished making my &lt;a href=&quot;https://juliennecodes.github.io&quot;&gt;web development portfolio&lt;/a&gt;. It features the projects I made and blog posts I’ve written. In the process of making the site, I weighed my options. Do I spend the time writing hardcoded information for each project or do I invest time into learning how to dynamically create pages?&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[julienneblogs]]></title><description><![CDATA[Blog documenting thoughts on my projects]]></description><link>https://juliennecodes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Aug 2021 00:02:44 GMT</lastBuildDate><item><title><![CDATA[Experimenting with SVG]]></title><description><![CDATA[For the longest time, I couldn’t really understand how SVG worked. I read about the subject from many different sources but nothing really…]]></description><link>https://juliennecodes.github.io/blog/experimenting-with-svg/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/experimenting-with-svg/</guid><pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;For the longest time, I couldn’t really understand how SVG worked. I read about the subject from many different sources but nothing really explained viewBox and viewport to me in a way that I understood. Luckily, I found &lt;a href=&quot;https://www.sarasoueidan.com/blog/svg-coordinate-systems&quot;&gt;Sara Soueidan’s blog post&lt;/a&gt; on it, which illuminated a lot of things.&lt;/p&gt;
+&lt;p&gt;I think what was missing from my previous understanding of SVG is the concept of infinite canvas and the portion of the canvas, decided by the viewBox, gets mapped to the viewport. Once I understood those two concepts, a lot of things fell into place.&lt;/p&gt;
+&lt;p&gt;So here is a very simple explanation.&lt;/p&gt;
+&lt;p&gt;So, you have your infinite canvas, upon which you can draw many shapes. It has its own coordinate system. You draw your shapes using that coordinate system, like &lt;code class=&quot;language-text&quot;&gt;&amp;lt;circle cx=&quot;150&quot; cy=&quot;150&quot; r=&quot;50&quot; fill=&quot;hsl(341, 58%, 57%)&quot; /&gt;&lt;/code&gt;, which has its center on (150, 150) and its radius is 50 units.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/daa83/experimenting-with-svg-1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHWTmIEV//EABYQAAMAAAAAAAAAAAAAAAAAAAABIP/aAAgBAQABBQIc/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAWEAADAAAAAAAAAAAAAAAAAAABECD/2gAIAQEAAT8hgV//2gAMAwEAAgADAAAAEIjP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGRAAAgMBAAAAAAAAAAAAAAAAAAEQITFB/9oACAEBAAE/EHcHvRj0PT//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/828fb/experimenting-with-svg-1.jpg&quot;
+        srcset=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/ff44c/experimenting-with-svg-1.jpg 158w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/a6688/experimenting-with-svg-1.jpg 315w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/828fb/experimenting-with-svg-1.jpg 630w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/0ede0/experimenting-with-svg-1.jpg 945w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/3ac88/experimenting-with-svg-1.jpg 1260w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/daa83/experimenting-with-svg-1.jpg 3897w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Then you decide on a viewBox. The viewBox decides which portions of the canvas you want to map to the viewport. In simpler terms, you decide which portion of the canvas goes on the viewport.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a5a14/experimenting-with-svg-2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.89873417721519%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdUAKk//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAEFAl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAWEAEBAQAAAAAAAAAAAAAAAAAAASD/2gAIAQEAAT8hVcf/2gAMAwEAAgADAAAAEPMf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhAAAgMBAQAAAAAAAAAAAAAAAAERITEQQf/aAAgBAQABPxCc3BqmGWdNj8Hz/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/828fb/experimenting-with-svg-2.jpg&quot;
+        srcset=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/ff44c/experimenting-with-svg-2.jpg 158w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a6688/experimenting-with-svg-2.jpg 315w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/828fb/experimenting-with-svg-2.jpg 630w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/0ede0/experimenting-with-svg-2.jpg 945w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/3ac88/experimenting-with-svg-2.jpg 1260w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a5a14/experimenting-with-svg-2.jpg 3941w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In this picture, the horizontal pink viewBox only shows the area from (0, 0) to (400, 150). It is decided that only that portion of the canvas gets to fill the viewport. Therefore, only parts of the circle and the square will be shown. The triangle is off the screen altogether.&lt;/p&gt;
+&lt;p&gt;This is what it looks like in the viewport&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c4842/experimenting-with-svg-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.24050632911392%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABCklEQVQoz62RTUvDQBCG89MEwYsXEfRXVMSbH3ixB8V6rDdFUY+CVbxF7dkWI+1BFKyx2NDiBs1mIzbg5hHTD0ziSR14mWFnePYdxlCeRL54+K+/l4yzpNPuYPCP4bpuDxhF0Z+kdRQDhRBJ4LD+0L2sv6RJf/qTiQxwEN/r4ZuOEr3sTNRfOeVw4Mar3NDI72CvHRDcNvtQnVjPvFPkzWcKZcH6hWD13KVUbWaPEtTuuR6bwxqd5WokR31ykdARKS+wXfEY33piet9haq/FxK5D0WxgKKXwfR/pSYLwHfvwDGtmg9p8kfrCJlauQKtcJQi78YwnfbpvimOrzVLpgZVTO9byic3R5SOfDhdZMvtftYYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/f058b/experimenting-with-svg-3.png&quot;
+        srcset=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c26ae/experimenting-with-svg-3.png 158w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/6bdcf/experimenting-with-svg-3.png 315w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/f058b/experimenting-with-svg-3.png 630w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/40601/experimenting-with-svg-3.png 945w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/78612/experimenting-with-svg-3.png 1260w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c4842/experimenting-with-svg-3.png 1634w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I documented my experiments in my &lt;a href=&quot;https://juliennecodes.github.io/explore-svg&quot;&gt;explore-svg project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, I did hit a snag when the aspect ratio of the viewBox does not match the aspect ratio of the viewport. I thought I understood what would happen and had a predictive picture of what it should look like. My educated guess was wrong so I will be reading more on the subject.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So summary&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Draw your shapes in a graph paper, this is your infinite svg canvas&lt;/li&gt;
+&lt;li&gt;Decide which portion of the canvas you want shown in the viewport&lt;/li&gt;
+&lt;li&gt;The viewBox values decide on which portion of the canvas is shown in the viewport&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[I Made Dynamic Pages! \(^o^)/]]></title><description><![CDATA[I just finished making my web development portfolio. It features the projects I made and blog posts I’ve written. In the process of making…]]></description><link>https://juliennecodes.github.io/blog/dynamic-pages/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/dynamic-pages/</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I just finished making my &lt;a href=&quot;https://juliennecodes.github.io&quot;&gt;web development portfolio&lt;/a&gt;. It features the projects I made and blog posts I’ve written. In the process of making the site, I weighed my options. Do I spend the time writing hardcoded information for each project or do I invest time into learning how to dynamically create pages?&lt;/p&gt;
 &lt;p&gt;The answer was both!&lt;/p&gt;
 &lt;p&gt;I did hardcode information at the start just to publish it quickly. However, I found that process to be a bit tedious, which was why I turned to figuring out how to do dynamic pages.&lt;/p&gt;
 &lt;p&gt;The biggest challenge I think was dynamically creating routes. I knew it was possible from a vague memory of a video I watched many months ago but I couldn’t exactly recall how. I can create components from objects but how do I create the routes to several different projects?&lt;/p&gt;

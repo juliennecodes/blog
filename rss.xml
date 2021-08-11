@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[julienneblogs]]></title><description><![CDATA[Blog documenting thoughts on my projects]]></description><link>https://juliennecodes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Aug 2021 00:02:44 GMT</lastBuildDate><item><title><![CDATA[Experimenting with SVG]]></title><description><![CDATA[For the longest time, I couldn’t really understand how SVG worked. I read about the subject from many different sources but nothing really…]]></description><link>https://juliennecodes.github.io/blog/experimenting-with-svg/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/experimenting-with-svg/</guid><pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;For the longest time, I couldn’t really understand how SVG worked. I read about the subject from many different sources but nothing really explained viewBox and viewport to me in a way that I understood. Luckily, I found &lt;a href=&quot;https://www.sarasoueidan.com/blog/svg-coordinate-systems&quot;&gt;Sara Soueidan’s blog post&lt;/a&gt; on it, which illuminated a lot of things.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[julienneblogs]]></title><description><![CDATA[Blog documenting thoughts on my projects]]></description><link>https://juliennecodes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Aug 2021 21:58:32 GMT</lastBuildDate><item><title><![CDATA[Experimenting with SVG Part 2]]></title><description><![CDATA[I read up more about preserveAspectRatio and I think I understand it now. Here are my whiteboard notes   New Concepts preserveAspectRatio…]]></description><link>https://juliennecodes.github.io/blog/experimenting-with-svg-part-2/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/experimenting-with-svg-part-2/</guid><pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I read up more about preserveAspectRatio and I think I understand it now.&lt;/p&gt;
+&lt;p&gt;Here are my whiteboard notes&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/a7e9da949a1c387c47d20f9e780e7290/d2602/experimenting-with-svg-part-2-1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB0FvQViJNf//EABkQAQEBAAMAAAAAAAAAAAAAAAEAAhESIf/aAAgBAQABBQLrJJeWknRz/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAACAx/9oACAEBAAY/AiL/AP/EABoQAQEBAQADAAAAAAAAAAAAAAEAETEhQdH/2gAIAQEAAT8hxh4jD4i3hLgjHb3F/9oADAMBAAIAAwAAABDwD//EABcRAAMBAAAAAAAAAAAAAAAAAAABETH/2gAIAQMBAT8QjFh//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EBJzb//EABsQAQACAwEBAAAAAAAAAAAAAAEAIRExQVGB/9oACAEBAAE/EFGdjLU0S1HLq8gMjYQ50VQz5zxn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/a7e9da949a1c387c47d20f9e780e7290/828fb/experimenting-with-svg-part-2-1.jpg&quot;
+        srcset=&quot;/blog/static/a7e9da949a1c387c47d20f9e780e7290/ff44c/experimenting-with-svg-part-2-1.jpg 158w,
+/blog/static/a7e9da949a1c387c47d20f9e780e7290/a6688/experimenting-with-svg-part-2-1.jpg 315w,
+/blog/static/a7e9da949a1c387c47d20f9e780e7290/828fb/experimenting-with-svg-part-2-1.jpg 630w,
+/blog/static/a7e9da949a1c387c47d20f9e780e7290/0ede0/experimenting-with-svg-part-2-1.jpg 945w,
+/blog/static/a7e9da949a1c387c47d20f9e780e7290/3ac88/experimenting-with-svg-part-2-1.jpg 1260w,
+/blog/static/a7e9da949a1c387c47d20f9e780e7290/d2602/experimenting-with-svg-part-2-1.jpg 4032w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/d2602/experimenting-with-svg-part-2-2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAeip85MYM3//xAAXEAEBAQEAAAAAAAAAAAAAAAABAAIR/9oACAEBAAEFAuWiZtM6O//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAQACAwEAAAAAAAAAAAAAAAEAQRARITH/2gAIAQEAAT8hRrzAexBcG5cT/9oADAMBAAIAAwAAABCg7//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxDKj//EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oACAECAQE/EBJv/8QAHRABAAMAAgMBAAAAAAAAAAAAAQARMUFhIVFxkf/aAAgBAQABPxCt6mniADQV8yHxM9QrWdx12A42DVn8Z//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Endpoint&quot;
+        title=&quot;Endpoint&quot;
+        src=&quot;/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/828fb/experimenting-with-svg-part-2-2.jpg&quot;
+        srcset=&quot;/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/ff44c/experimenting-with-svg-part-2-2.jpg 158w,
+/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/a6688/experimenting-with-svg-part-2-2.jpg 315w,
+/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/828fb/experimenting-with-svg-part-2-2.jpg 630w,
+/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/0ede0/experimenting-with-svg-part-2-2.jpg 945w,
+/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/3ac88/experimenting-with-svg-part-2-2.jpg 1260w,
+/blog/static/2c74a7c6fac0d0f8253d605a3a80de07/d2602/experimenting-with-svg-part-2-2.jpg 4032w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;New Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;preserveAspectRatio&lt;/li&gt;
+&lt;li&gt;meet&lt;/li&gt;
+&lt;li&gt;slice&lt;/li&gt;
+&lt;li&gt;alignment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;preserveAspectRatio&lt;/h3&gt;
+&lt;p&gt;preserveAspectRatio is really pertinent when the aspect ratio of the portion of the infinite canvas does not match the aspect ratio of the viewport.&lt;/p&gt;
+&lt;p&gt;You have to decide does the portion get contained in the viewport with all of the portion content showing or does the portion fill up the viewport with only parts of it showing?&lt;/p&gt;
+&lt;p&gt;Examples&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;preserveAspectRatio = “xMaxYMin meet”&lt;/li&gt;
+&lt;li&gt;preserveAspectRatio = “xMidYMax slice”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Meet&lt;/h3&gt;
+&lt;p&gt;Meet is the portion being contained&lt;/p&gt;
+&lt;h3&gt;Slice&lt;/h3&gt;
+&lt;p&gt;Slice is the portion filling up the viewport&lt;/p&gt;
+&lt;h3&gt;Alignment&lt;/h3&gt;
+&lt;p&gt;Alignment is how the portion is positioned in the viewport. xMinYMin makes it so xMin of the portion is aligned to the xMin of the viewport. It also means YMin of the portion is aligned to the YMin of the viewport.&lt;/p&gt;
+&lt;p&gt;I went through the values in my whiteboard notes.&lt;/p&gt;
+&lt;p&gt;I also updated my &lt;a href=&quot;https://juliennecodes.github.io/explore-svg&quot;&gt;explore-svg project&lt;/a&gt; where I experimented with different svg element alignments.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Experimenting with SVG Part 1]]></title><description><![CDATA[For the longest time, I couldn’t really understand how SVG worked. I read about the subject from many different sources but nothing really…]]></description><link>https://juliennecodes.github.io/blog/experimenting-with-svg-part-1/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/experimenting-with-svg-part-1/</guid><pubDate>Sun, 08 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;For the longest time, I couldn’t really understand how SVG worked. I read about the subject from many different sources but nothing really explained viewBox and viewport to me in a way that I understood. Luckily, I found &lt;a href=&quot;https://www.sarasoueidan.com/blog/svg-coordinate-systems&quot;&gt;Sara Soueidan’s blog post&lt;/a&gt; on it, which illuminated a lot of things.&lt;/p&gt;
 &lt;p&gt;I think what was missing from my previous understanding of SVG is the concept of infinite canvas and the portion of the canvas, decided by the viewBox, gets mapped to the viewport. Once I understood those two concepts, a lot of things fell into place.&lt;/p&gt;
 &lt;p&gt;So here is a very simple explanation.&lt;/p&gt;
 &lt;p&gt;So, you have your infinite canvas, upon which you can draw many shapes. It has its own coordinate system. You draw your shapes using that coordinate system, like &lt;code class=&quot;language-text&quot;&gt;&amp;lt;circle cx=&quot;150&quot; cy=&quot;150&quot; r=&quot;50&quot; fill=&quot;hsl(341, 58%, 57%)&quot; /&gt;&lt;/code&gt;, which has its center on (150, 150) and its radius is 50 units.&lt;/p&gt;
@@ -8,7 +98,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/daa83/experimenting-with-svg-1.jpg&quot;
+    href=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/daa83/experimenting-with-svg-part-1-1.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -21,13 +111,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Endpoint&quot;
         title=&quot;Endpoint&quot;
-        src=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/828fb/experimenting-with-svg-1.jpg&quot;
-        srcset=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/ff44c/experimenting-with-svg-1.jpg 158w,
-/blog/static/cb75492dc31dbda9cc08fb1588915ec5/a6688/experimenting-with-svg-1.jpg 315w,
-/blog/static/cb75492dc31dbda9cc08fb1588915ec5/828fb/experimenting-with-svg-1.jpg 630w,
-/blog/static/cb75492dc31dbda9cc08fb1588915ec5/0ede0/experimenting-with-svg-1.jpg 945w,
-/blog/static/cb75492dc31dbda9cc08fb1588915ec5/3ac88/experimenting-with-svg-1.jpg 1260w,
-/blog/static/cb75492dc31dbda9cc08fb1588915ec5/daa83/experimenting-with-svg-1.jpg 3897w&quot;
+        src=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/828fb/experimenting-with-svg-part-1-1.jpg&quot;
+        srcset=&quot;/blog/static/cb75492dc31dbda9cc08fb1588915ec5/ff44c/experimenting-with-svg-part-1-1.jpg 158w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/a6688/experimenting-with-svg-part-1-1.jpg 315w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/828fb/experimenting-with-svg-part-1-1.jpg 630w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/0ede0/experimenting-with-svg-part-1-1.jpg 945w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/3ac88/experimenting-with-svg-part-1-1.jpg 1260w,
+/blog/static/cb75492dc31dbda9cc08fb1588915ec5/daa83/experimenting-with-svg-part-1-1.jpg 3897w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -42,7 +132,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a5a14/experimenting-with-svg-2.jpg&quot;
+    href=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a5a14/experimenting-with-svg-part-1-2.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -55,13 +145,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Endpoint&quot;
         title=&quot;Endpoint&quot;
-        src=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/828fb/experimenting-with-svg-2.jpg&quot;
-        srcset=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/ff44c/experimenting-with-svg-2.jpg 158w,
-/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a6688/experimenting-with-svg-2.jpg 315w,
-/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/828fb/experimenting-with-svg-2.jpg 630w,
-/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/0ede0/experimenting-with-svg-2.jpg 945w,
-/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/3ac88/experimenting-with-svg-2.jpg 1260w,
-/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a5a14/experimenting-with-svg-2.jpg 3941w&quot;
+        src=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/828fb/experimenting-with-svg-part-1-2.jpg&quot;
+        srcset=&quot;/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/ff44c/experimenting-with-svg-part-1-2.jpg 158w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a6688/experimenting-with-svg-part-1-2.jpg 315w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/828fb/experimenting-with-svg-part-1-2.jpg 630w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/0ede0/experimenting-with-svg-part-1-2.jpg 945w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/3ac88/experimenting-with-svg-part-1-2.jpg 1260w,
+/blog/static/f24b32a5b53530fb63f7b2dee2fed3ab/a5a14/experimenting-with-svg-part-1-2.jpg 3941w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -77,7 +167,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c4842/experimenting-with-svg-3.png&quot;
+    href=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c4842/experimenting-with-svg-part-1-3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -90,13 +180,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Endpoint&quot;
         title=&quot;Endpoint&quot;
-        src=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/f058b/experimenting-with-svg-3.png&quot;
-        srcset=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c26ae/experimenting-with-svg-3.png 158w,
-/blog/static/ec1e768a79a6271f7fd0d73656878b3d/6bdcf/experimenting-with-svg-3.png 315w,
-/blog/static/ec1e768a79a6271f7fd0d73656878b3d/f058b/experimenting-with-svg-3.png 630w,
-/blog/static/ec1e768a79a6271f7fd0d73656878b3d/40601/experimenting-with-svg-3.png 945w,
-/blog/static/ec1e768a79a6271f7fd0d73656878b3d/78612/experimenting-with-svg-3.png 1260w,
-/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c4842/experimenting-with-svg-3.png 1634w&quot;
+        src=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/f058b/experimenting-with-svg-part-1-3.png&quot;
+        srcset=&quot;/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c26ae/experimenting-with-svg-part-1-3.png 158w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/6bdcf/experimenting-with-svg-part-1-3.png 315w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/f058b/experimenting-with-svg-part-1-3.png 630w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/40601/experimenting-with-svg-part-1-3.png 945w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/78612/experimenting-with-svg-part-1-3.png 1260w,
+/blog/static/ec1e768a79a6271f7fd0d73656878b3d/c4842/experimenting-with-svg-part-1-3.png 1634w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -785,4 +875,36 @@ Method with logic of updating the cart&lt;/p&gt;</content:encoded></item><item><
 &lt;p&gt;React was suggested to me as the next step. For practical reasons, React was a popular JavaScript library that a lot of companies use. For personal reasons, my educational background is in the visual arts so I was naturally more inclined towards the frontend side of programming.&lt;/p&gt;
 &lt;p&gt;It was at this point that I shifted towards a more project-based learning. I started writing apps with the goal of learning something new in each one. I’ve undertaken progressively more challenging projects than the one that came before. In the process, I learned about states, React hooks, React Router, automated testing, client-server communication among many others.&lt;/p&gt;
 &lt;p&gt;In the process of writing apps, I’ve been introduced to the backend territory of programming. I started with Express, writing REST APIs. More recently, I enrolled in &lt;a href=&quot;https://allaboardbootcamp.com/&quot;&gt;All Aboard Bootcamp&lt;/a&gt;, which taught me Ruby on Rails. I had familiarity with the concept of endpoints through past projects and expanded on my backend knowledge by learning to work with databases(through Rails).&lt;/p&gt;
-&lt;p&gt;There is still so much to learn. My programming journey is ongoing as I continue to move towards the backend territory of software development. Particularly I think GraphQL, and databases.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;There is still so much to learn. My programming journey is ongoing as I continue to move towards the backend territory of software development. Particularly I think GraphQL, and databases.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Blog Template Title]]></title><description><![CDATA[This is a blog template. This is a paragraph. This is a text that is a link 
+Image caption]]></description><link>https://juliennecodes.github.io/blog/use-an-older-commit-as-head/</link><guid isPermaLink="false">https://juliennecodes.github.io/blog/use-an-older-commit-as-head/</guid><pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is a blog template. This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is a &lt;a href=&quot;https://google.com&quot;&gt;text that is a link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 240px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/165d72cf3cddaf73ae1ea86ab0133868/8ff5a/z-template-blog-post.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAHUlEQVQ4y2NgYGD4T2U8auCogaMGjho4auDINBAAqMKOgEQHycIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Alt Name For Image&quot;
+        title=&quot;Alt Name For Image&quot;
+        src=&quot;/blog/static/165d72cf3cddaf73ae1ea86ab0133868/8ff5a/z-template-blog-post.png&quot;
+        srcset=&quot;/blog/static/165d72cf3cddaf73ae1ea86ab0133868/c26ae/z-template-blog-post.png 158w,
+/blog/static/165d72cf3cddaf73ae1ea86ab0133868/8ff5a/z-template-blog-post.png 240w&quot;
+        sizes=&quot;(max-width: 240px) 100vw, 240px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Image caption&lt;/p&gt;</content:encoded></item></channel></rss>
